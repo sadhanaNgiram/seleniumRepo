@@ -1,0 +1,17 @@
+package Rest_Assured;
+import java.util.Map;
+import java.util.HashMap;
+import org.json.simple.*;
+import org.testng.annotations.Test;
+
+public class Post_method2 {
+	@Test
+	public void test1() {
+Map<String,Object> map=new HashMap<String,Object>();
+map.put("name", "sadhana");
+map.put("job", "teacher");
+
+JSONObject jo=new JSONObject(map);
+System.out.println(jo.toJSONString());
+}
+}

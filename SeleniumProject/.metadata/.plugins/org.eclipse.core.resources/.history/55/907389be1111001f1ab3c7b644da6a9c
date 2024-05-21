@@ -1,0 +1,20 @@
+package selenuim_practice;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class demo_1 {
+	@Test
+
+    public void chrome() 
+{		// TODO Auto-generated method stub
+    	WebDriverManager.chromedriver().setup();
+    	WebDriver driver=new ChromeDriver();
+    	driver.get("http://www.javatpoint.com/");
+    	driver.quit();
+        
+        
+	}
+
+}

@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+/**
+ * @author dell
+ *
+ */
+module selenuim_practice {
+	requires io.github.bonigarcia.webdrivermanager;
+	requires org.seleniumhq.selenium.chrome_driver;
+}

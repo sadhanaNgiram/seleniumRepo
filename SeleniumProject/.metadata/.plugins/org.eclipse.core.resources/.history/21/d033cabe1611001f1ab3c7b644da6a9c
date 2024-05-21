@@ -1,0 +1,15 @@
+package selenuim_practice;
+import org.testng.annotations.Test;
+
+
+
+public class demo_1 {
+	@Test
+    public void chrome() 
+{		// TODO Auto-generated method stub
+    	System.out.println("this is first test case");
+        
+        
+	}
+
+}

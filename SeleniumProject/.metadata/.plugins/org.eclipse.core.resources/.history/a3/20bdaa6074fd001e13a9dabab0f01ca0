@@ -1,0 +1,19 @@
+package Rest_Assured;
+
+import org.testng.annotations.Test;
+import static org.hamcrest.Matchers.*;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+
+public class Get_Method2 {
+	@Test 
+public void test1() {
+	
+	//https://reqres.in/api/users?page=2
+		// BaseURI="https://reqres.in/api";
+		RestAssured.given().when().get("https://reqres.in/api/users?page=2").then().statusCode(200)
+		.body("Total",equals(12)).all();
+}
+}

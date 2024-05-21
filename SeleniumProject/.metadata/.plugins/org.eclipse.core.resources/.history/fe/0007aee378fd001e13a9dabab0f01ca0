@@ -1,0 +1,8 @@
+package Rest_Assured;
+import java.util.Map;
+import java.util.HashMap;
+
+public class Post_method2 {
+Map<String,Object> map=new HashMap<>();
+
+}

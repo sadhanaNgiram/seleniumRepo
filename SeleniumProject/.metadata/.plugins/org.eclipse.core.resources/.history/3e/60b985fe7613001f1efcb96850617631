@@ -1,0 +1,18 @@
+package Oops_programs;
+
+public class RuntimePolymorphism{
+public void method1(int a,int b){
+
+int add= a+b;
+System.out.println(add);
+}
+public void method1(String fname,String lname){
+String fullname=fname + lname;
+System.out.println(fullname);
+}
+public static void main(String[]args){
+RuntimePolymorphism Rp=new RuntimePolymorphism();
+Rp.method1(12,34);
+Rp.method1("sadhana","giram");
+}
+}

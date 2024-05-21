@@ -1,0 +1,15 @@
+package Rest_Assured;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class Get_Method2 {
+	@Test 
+public void test1() {
+	
+	//https://reqres.in/api/users?page=2
+		 baseuri="https://reqres.in/api";
+		RestAssured.given().when().get("/users?page=2").then().statusCode(200);
+}
+}
